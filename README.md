@@ -4,7 +4,9 @@ AI-summarized daily brief from any RSS feeds and webpages. Configure your
 sources in YAML, set a system prompt to define the brief's voice, and get
 a Claude-generated summary delivered to Telegram and Discord on whatever
 schedule you choose.
-
+<p align="center">
+  <img src="docs/discord run.png" width="400" alt="Daily brief delivered to Discord">
+</p>
 ## What it does
 
 Pulls content from RSS feeds and webpages listed in `sources.yaml`,
