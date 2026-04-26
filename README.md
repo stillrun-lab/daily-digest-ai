@@ -5,7 +5,7 @@ sources in YAML, set a system prompt to define the brief's voice, and get
 a Claude-generated summary delivered to Telegram and Discord on whatever
 schedule you choose.
 <p align="center">
-  <img src="docs/discord run.png" width="400" alt="Daily brief delivered to Discord">
+  <img src="docs/discord run.png" width="1080" alt="Daily brief delivered to Discord">
 </p>
 ## What it does
 
