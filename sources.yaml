@@ -1,0 +1,33 @@
+# Daily-digest-ai — sources & output config
+#
+# rss:    list of RSS/Atom feeds (use hnrss.org, feeds from blogs/news sites)
+# pages:  list of webpages to scrape and include
+# digest: title and system prompt that shapes the AI output
+
+rss:
+  - name: "Hacker News (top stories)"
+    url: "https://hnrss.org/frontpage"
+    max_items: 10
+
+  - name: "TechCrunch"
+    url: "https://techcrunch.com/feed/"
+    max_items: 5
+
+pages:
+  - name: "GitHub Trending Python"
+    url: "https://github.com/trending/python"
+    selector: "article.Box-row"
+
+digest:
+  title: "Morning Brief"
+  system_prompt: |
+    You are a sharp executive analyst preparing a daily brief.
+
+    Format the output exactly as:
+    1. A 2-3 sentence overview of today's themes
+    2. 5-8 bullet points of the most important items, each one line,
+       cited by source name in parentheses
+    3. A "What to watch" section with 2-3 forward-looking notes
+
+    Skip filler. Skip "I think" or "It's worth noting." Be direct.
+    Total length under 1500 characters so it fits Telegram cleanly.
